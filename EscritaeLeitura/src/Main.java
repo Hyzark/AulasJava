@@ -24,7 +24,7 @@ public class Main {
 			
 
 			System.out.println("Qual seu jogador favorito?");
-			bappe.setNome(in.nextLine());
+			bappe.setNome(in.next());
 			System.out.println("Qual o numero da camisa dele?");
 			bappe.setNum(in.nextInt());
 

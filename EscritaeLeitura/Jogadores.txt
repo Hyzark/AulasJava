@@ -1,1 +1,1 @@
-Jogadores [num=7, nome=8]
+Jogadores [num=6, nome=chj]

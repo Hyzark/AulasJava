@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Calculadora2/src"/>
+	<classpathentry kind="src" path="Calcular/src"/>
+	<classpathentry kind="src" path="ClassesAbstratas/src"/>
+	<classpathentry kind="src" path="ContaBancaria/src"/>
+	<classpathentry kind="src" path="ElementosStaticos/src"/>
+	<classpathentry kind="src" path="Enum/src"/>
+	<classpathentry kind="src" path="EscreverTXT/src"/>
+	<classpathentry kind="src" path="EscritaeLeitura/src"/>
+	<classpathentry kind="src" path="ExercicioArray/src"/>
+	<classpathentry kind="src" path="ExercicioContaBancaria/src"/>
+	<classpathentry kind="src" path="ExercicioLampada/src"/>
+	<classpathentry kind="src" path="ExerciciosInterface/src"/>
+	<classpathentry kind="src" path="Fundamentosjava/src"/>
+	<classpathentry kind="src" path="FundamentosJava2/src"/>
+	<classpathentry kind="src" path="Herança/src"/>
+	<classpathentry kind="src" path="interface/src"/>
+	<classpathentry kind="src" path="LerTXT/src"/>
+	<classpathentry kind="src" path="List/src"/>
+	<classpathentry kind="src" path="MediaAluno/src"/>
+	<classpathentry kind="src" path="OrientaçãoObjetos/src"/>
+	<classpathentry kind="src" path="Polimorfismo/src"/>
+	<classpathentry kind="src" path="PolimorfismoBebidas/src"/>
+	<classpathentry kind="src" path="Sobrecarga/src"/>
+	<classpathentry kind="src" path="Teste/src"/>
+	<classpathentry kind="src" path="TransaçãoPix/src"/>
+	<classpathentry kind="output" path="ElementosStaticos/bin"/>
+</classpath>
