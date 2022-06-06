@@ -5,10 +5,7 @@ String nome;
 String idade;
 Endereço en;
 Sexo sexo;
-static int x;
 	
-
-
 public Pessoa() {
 	
 }
@@ -36,33 +33,27 @@ public void setSexo(Sexo sexo) {
 
 @Override
 public String toString() {
-	return ("Cadastro " + nome + " idade: " + idade + ", Mora na rua: " + en.rua +  " do bairro: "+ en.bairro+ " Na casa do numero: "+ en.nume + " do sexo: " + sexo);
+	return ("Cadastro: " + nome + ", idade: " + idade + " , sexo: " + sexo + en.toString());
 }
 
 public Pessoa(String texto) {
 	String[] arrayAuxiliar1 = texto.split(",");
-	String[] arrayAuxiliar2 = arrayAuxiliar1[0].split("=");
-	this.nome = arrayAuxiliar2[1].trim();
+	String[] arrayAuxiliar2 = arrayAuxiliar1[0].split(":");
+	nome = arrayAuxiliar2[1].trim();
 
-	String[] arrayAuxiliar3 = arrayAuxiliar1[1].split("=");
-	this.idade = arrayAuxiliar3[1].trim();
+	String[] arrayAuxiliar3 = arrayAuxiliar1[1].split(":");
+	idade = arrayAuxiliar3[1].trim();
 	
-	arrayAuxiliar3 = arrayAuxiliar1[1].split(":");
-	this.en.bairro= arrayAuxiliar3[1].trim();
-	arrayAuxiliar3 = arrayAuxiliar1[1].split(":");
-	this.en.nume= arrayAuxiliar3[1].trim();
-	arrayAuxiliar3 = arrayAuxiliar1[1].split(":");
-	this.en.rua= arrayAuxiliar3[1].trim();
+	String[] arrayAuxiliar4 = arrayAuxiliar1[2].split(":");
+	sexo = Sexo.valueOf(arrayAuxiliar4[1].trim());
 	
-	String[] arrayAuxiliar4 = arrayAuxiliar1[1].split(":");
-	if(arrayAuxiliar4[1] == "Masculino") {
-		this.sexo = Sexo.Masculino; 
-	}else {
-		this.sexo = Sexo.Feminino; 
+	
+	Endereço lol = new Endereço(texto);
+	en = lol;
 	}
-}
-
-
 
 
 }
+
+
+

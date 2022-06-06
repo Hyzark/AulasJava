@@ -1,2 +1,2 @@
-Cadastro wg idade: 22, Mora na rua: sfdg do bairro: gr Na casa do numero: 32 do sexo: Masculino
-Cadastro erg idade: 34, Mora na rua: segs do bairro: ef Na casa do numero: 23 do sexo: Feminino
+Cadastro: 1, idade: 1 , sexo: Masculino, Mora na rua: 1 , do bairro: 1 , Na casa do numero: 1
+Cadastro: 1, idade: 1 , sexo: Masculino, Mora na rua: 1 , do bairro: 1 , Na casa do numero: 1

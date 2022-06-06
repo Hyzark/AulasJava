@@ -16,7 +16,7 @@ public class Main {
 		List<Pessoa> listaDePessoasEscrever = new ArrayList<Pessoa>();
 		List<Pessoa> listaDePessoaslida = new ArrayList<Pessoa>();
 
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i < 4; i++) {
 
 			Pessoa conta = new Pessoa();
 			conta.setEn(new Endereço());
@@ -47,28 +47,28 @@ public class Main {
 			}
 
 			listaDePessoasEscrever.add(conta);
-
+		}
 			try (BufferedWriter escrever = new BufferedWriter(new FileWriter("Entrada.txt"))) {
 				for (Pessoa a : listaDePessoasEscrever){
 					escrever.write(a.toString()+"\n");
 				}
-
+			}
 				try (BufferedReader reader = new BufferedReader(new FileReader("Entrada.txt"))) {
 					String line;
 
 					while ((line = reader.readLine()) != null) {
 
-						Pessoa sabao = new Pessoa(line);
+						Pessoa contaler = new Pessoa(line);
 
-						listaDePessoaslida.add(sabao);
+						listaDePessoaslida.add(contaler);
 
 					}
-					for (Pessoa sabao : listaDePessoaslida) {
-						System.out.println(sabao.toString());
+					for (Pessoa contaler : listaDePessoaslida) {
+						System.out.println(contaler.toString());
 					}
 
 				}
-			}
-		}
+			
+		
 	}
 }
