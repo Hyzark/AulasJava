@@ -1,11 +1,13 @@
 
-public class Veiculo {
+public class Veiculo { //O CONCEITO DE HERANÇA É BEM SIMPLES, JÁ QUE A PROPRIA PALAVRA JA DIZ TUDO. BASICAMENTE É NECESSÁRIO QUE HAJA UMA CLASSE PAI, PARA QUE SUB CLASSES POSSAM HERDAR MÉTODOS E ATRIBUTOS DA CLASSE PAI.
 
+	//ATRIBUTOS
 	private String nome_ve;
 	protected String marca;
 	protected String modelo;
 	protected int ano;
 	
+	//MÉTODOS
 	public void buzinar() {
 		System.out.println("BI BI");
 	}
