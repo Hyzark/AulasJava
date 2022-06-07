@@ -1,3 +1,3 @@
-public enum Sexo {
+public enum Sexo { //INSTANCIANDO UMA ENUM
 	Masculino, Feminino;
 }
