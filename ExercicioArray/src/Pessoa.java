@@ -1,13 +1,16 @@
 
-public class Pessoa {
+public class Pessoa { //INSTANCIANDO UMA CLASSE
 
+//ATRIBUTOS
 String nome;
 String idade;
-Endere�o en;
+Endereço en;
 Sexo sexo;
-	
+
+//CONSTRUTOR
 public Pessoa() {
-	
+
+//MÉTODOS
 }
 public String getNome() {
 	return nome;
@@ -21,10 +24,10 @@ public String getIdade() {
 public void setIdade(String idade) {
 	this.idade = idade;
 }
-public Endere�o getEn() {
+public Endereço getEn() {
 	return en;
 }
-public void setEn(Endere�o en) {
+public void setEn(Endereço en) {
 	this.en = en;
 }
 public void setSexo(Sexo sexo) {
@@ -33,7 +36,7 @@ public void setSexo(Sexo sexo) {
 
 @Override
 public String toString() {
-	return ("Cadastro: " + nome + ", idade: " + idade + " , sexo: " + sexo + en.toString());
+	return ("Cadastro: " + nome + ", idade: " + idade + " , sexo: " + sexo + en.toString());//DENTRO DO "toString" DE PESSOA FOI ADD O TOSTRING DE ENDEREÇO
 }
 
 public Pessoa(String texto) {
@@ -45,10 +48,10 @@ public Pessoa(String texto) {
 	idade = arrayAuxiliar3[1].trim();
 	
 	String[] arrayAuxiliar4 = arrayAuxiliar1[2].split(":");
-	sexo = Sexo.valueOf(arrayAuxiliar4[1].trim());
+	sexo = Sexo.valueOf(arrayAuxiliar4[1].trim()); //O método valueOf é um método estático que recebe um argumento de qualquer tipo e o converte em um objeto String,
 	
 	
-	Endere�o lol = new Endere�o(texto);
+	Endereço lol = new Endereço(texto); //FOI NECESSÁRIO INSTANCIAR UM OBJT DE ENDEREÇO PARA ADD A ARRAY DE ENDEREÇO A ARRAY DE PESSOA
 	en = lol;
 	}
 
