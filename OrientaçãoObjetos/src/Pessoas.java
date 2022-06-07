@@ -1,25 +1,30 @@
 
-public class Pessoas {
+public class Pessoas { //INSTANCIANDO UMA CLASSE
 
-	String nome;
+	//ATRIBUTOS
+	String nome; 
 	int nume_figu;
 
-	void receber(int nume_figu, Pessoas pessoa) {
+	//MÉTODOS
+	void //DEFININDO O TIPO DE RETORNO DO MÉTODO COMO VOID(SEM RETORNO)
+		receber(int nume_figu, Pessoas pessoa) {
 		pessoa.nume_figu += nume_figu;
 
 	}
 
-	boolean dar(int nume_figu, Pessoas pessoa) {
+	boolean //DEFININDO O TIPO DE RETORNO DO MÉTODO COMO BOOLEAN(TRUE OR FALSE)
+		dar(int nume_figu, Pessoas pessoa) { 
 		//boolean msg;
 
+		//ESTRUTURA CONDICIONAL
 		if (this.nume_figu < nume_figu) {
 			System.out.println("lol");
-			return false;
+			return false;//BOOLEAN
 		} else {
 			this.nume_figu -= nume_figu;
 			pessoa.receber(nume_figu, pessoa);
 
-			return true;
+			return true;//BOOLEAN
 
 		}
 
@@ -36,7 +41,7 @@ public class Pessoas {
 		// msg = true;
 		// } else {
 
-		// System.out.println("Voc� n�o essa quatidade de figurinhas.");
+		// System.out.println("Você não essa quatidade de figurinhas.");
 		// msg = false;
 		// }
 		// return msg;
