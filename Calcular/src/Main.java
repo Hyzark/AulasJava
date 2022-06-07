@@ -32,7 +32,7 @@ public class Main {
 	    	
 			
 			System.out.println("O resultado eh: " + pog);
-	    	
+	    	//ISSO IRA SE REPETIR PARA TODOS OS ELSES IFS
 	    }
 	    else if(m == 2){
 	    	

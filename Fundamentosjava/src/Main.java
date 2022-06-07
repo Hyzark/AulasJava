@@ -1,19 +1,19 @@
-import java.util.Scanner;
+import java.util.Scanner; //IMPORTANTO java.util.Scanner PARA FAZER A UTILIZAÇÃO DO SCANNER
 
-public class Main {
+public class Main { //INSTANCIA DE UMA CLASSE 
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { //ELE EH A CHAVE FUNDAMENTAL PARA O FUNCIONAMENTO DO CODIGO
 
 		// int x = 100;
 		// double y = 200.5;
 		// int a = 0;
 		// double b = 0;
-		// short z = (short) 100000;//casting explicito
+		short z = (short) 100000; //CASTING EXPLICITO EH QUANDO NOS MUDAMOS UMA VARIAVEL DE UM TIPO MENOS ESPECIFICO PARA UM TIPO MAIS ESPECIFICO
 
 		// System.out.println(z);
 		// System.out.println();
 
-		// x = (int) y;//casting implicito
+	    x = (int) y; //CASTING IMPLICITO EH QUANDO NOS MUDAMOS UMA VARIAVEL DE UM TIPO MAIS ESPECIFICO PARA UM TIPO MENOS ESPECIFICO
 		// y = x;
 
 		// System.out.println(y);
@@ -28,17 +28,17 @@ public class Main {
 //		 
 //		System.out.println("vc tem " + idadePessoa);
 
-		Scanner in = new Scanner(System.in);
+		Scanner in = new Scanner(System.in); //SCANNER EH UMA CLASSE QUE RECEBE AS INFORMACOES DIGITADAS PELO TECLADO, LITERALMENTE SCANNEANDO
 		int num = 1;
 
 //		System.out.println("Digite um número para que eu possa auxília-lo no dia da semana");
 //		num = Integer.parseInt(in.nextLine());
 //
-//		switch (num) {
+	switch (num) { //SWITCH CASE EH UMA ESTRUTURA DE CONDICAO, MUITO SEMELHANTE AO "if", POREM HÁ DIFERENCAS ENTRE ELES, JA QUE O SWITCH VAI TRATAR OS CASOS DE UMA UNICA ENTRADA, DIFERENTEMENTE DO IF, QUE NAO TE RESTRINGE A QUANTAS ENTRADAS SERAO AVALIADAS
 //
-//		case 1:
+		case 1: CASE EH O TESTE DA CONDICAPO
 //			System.out.println("Segunda");
-//			break;
+			break;  // BREAK PARA FECHAR O "case"
 //		case 2:
 //			System.out.println("Terça");
 //			break;
@@ -56,7 +56,7 @@ public class Main {
 //		case 7:
 //			System.out.println("Domingo");
 //			break;
-//		default:
+		default: // DEFAULT SERVE PARA O CODIGO VA PARA UM CAMINHO DIFERENTE CASO AS CONDICOES NAO BATAM COM NENHHUM CASE
 //			System.out.println("Esse número eh invalido");
 //			
 //		}
@@ -96,19 +96,19 @@ public class Main {
 //		}
 
 //		int x = 0;
-//		while(x<10) {//testar para depois executar
+	while(x<10) {//WHILE EH UMA ESTRUTURA CONDICONAL QUE EXECUTA SUA FUNCAO ENQUANTO O VALOR FOR CORRESPONDENTE COMA CONDICAO //ELE TESTA PRIMEIRO PARA DEPOIS FAZER A EXECUCAO, DIFERENTEMENTE DO "do"
 //		System.out.println(x);
-//		x++;
+		x++; //EM OUTRAS PALAVRAS X = X + 1
 //			
 //		}
 //		
 //		x=0;
-//		do {//ele executa primeiro, independente e dps faz o teste
+		do {//DO FAZ PARTE DA ESTRUTURA CONDICONAL "while", POREM ELE IRA EXECUTAR ANTES DE FAZER O TESTE CONDICIONAL
 //			System.out.println(x);
 //			x++;
 //		}while(x<10);
 
-//		for(int x=0; x>-10; x--) {
+		for(int x=0; x>-10; x--) { //FOR EH UMA ESTRUTURA CONDICONAL QUE EXECUTA ATE O VALOR DO TESTE CONDICIONAL CHEGAR AO UM CERTO VALOR DETERMINADO
 //			System.out.println(x);
 
 //		System.out.println("Selecione 'T' para consultar tabuada.");
@@ -118,7 +118,7 @@ public class Main {
 //		String lol = "";
 //		lol = in.nextLine();
 //		
-//		if( (lol.equals("T"))) {
+		if( (lol.equals("T"))) { //IF EH UMA ESTRUTURA CONDICONAL, COM O MESMO FUNCIONAMENTO DO CASE, POREM, NAO SE RESTRINGINDO AO NUMERO DE ENTRADAS 
 //			int t;
 //			System.out.println("Qual tabuada deseja consultar?");
 //			t = Integer.parseInt(in.nextLine());
@@ -126,7 +126,7 @@ public class Main {
 //				
 //				System.out.println(t + "x" + p + " = " + p*t);
 //			
-//		}else if ( (lol.equals("O"))) {
+		}else if ( (lol.equals("O"))) { //EH COMO SE FOSSE O "senao" JA QUE ELE IRA EXECUTAR CASO O TESTE CONDICIONAL DER "false"
 //			
 //			System.out.println("Qual dessas operações: (+, -, *, /) você deseja realizar?");
 //			String op = "";
@@ -168,7 +168,7 @@ public class Main {
 //}
 //	
 //
-//		double x[] = { 1, 3, 4, 6 };
+		double x[] = { 1, 3, 4, 6 }; //INSTANCIANDO UMA MATRIZ, QUE EH UMA COLECAO DE VARIAVEIS DE MESMO TIPO, ACESSIVEIS COM UM UNICO NOME E ARMAZENADOS CONTIGUANTAMENTE NO ARMAZENAMENTO
 //
 //		for (int aux = 0; aux < x.length; aux++) {
 //			System.out.println("Valor indice " + aux + " = " + x[aux]);
@@ -188,10 +188,10 @@ public class Main {
 
 //		arrayInt[3] = 4;
 //
-////		int[] numero = new int[6];
+//		int[] numero = new int[6];
 //		Scanner teclado = new Scanner(System.in);
 //
-////		for (int aux2 = 0; aux2 < numero.length; aux2++) {
+//		for (int aux2 = 0; aux2 < numero.length; aux2++) {
 //			System.out.println("Digite um numero qualquer");
 //			numero[aux2] = teclado.nextInt();
 //		}

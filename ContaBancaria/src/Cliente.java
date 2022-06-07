@@ -2,14 +2,19 @@ import java.util.Objects;
 
 public class Cliente {
 
+	//CRIANDO VARIAVEIS DO TIPO DE EMCAPSULAMENTO "private"
+	
 	private String nome;
 	private int cpf;
 	private int numConta;
 	
+	//CRIANDO UM CONSTRUTOR 
+	//O METODO "construtor" DETERMINA QUE ACOES DEVEM SER EXCUTADAS APOS A INSTANCIA DE UM OBEJETO
 	public Cliente() {
 		
 	}
 
+	
 	public String getNome() {
 		return nome;
 	}
