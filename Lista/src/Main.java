@@ -37,19 +37,19 @@ public class Main {
 //		
 //		System.out.println();
 //		
-//		lista.clear();
+//		lista.clear(); //LIMPANDO A LIST
 //		if (lista.isEmpty()) {
-//			System.out.println("Sua lista est· vazia");
+//			System.out.println("Sua lista est√° vazia");
 //		}
 		
 		Conta conta1 = new Conta("Agua", 60.00);
 		Conta conta2 = new Conta("Luz", 160.00);
-		
-		List<Conta> listaDeContas = new ArrayList<Conta>(); //Apenas ir· aceitar instanciar objetos do tipo "Conta"
-		
+		//LIST EM JAVA EH UMA INTERFACE E EH IMPLEMENTADA POR ARRAYLIST, LINKEDLIST , VECTOR E STACK
+		List<Conta> listaDeContas = new ArrayList<Conta>(); //Apenas ir√° aceitar instanciar objetos do tipo "Conta"
+		//ADD OS ITENS A LISTA
 		listaDeContas.add(conta1);
 		listaDeContas.add(conta2);
-		
+		//FAZENDO O SEPARAMENTO DOS ITENS 
 		for(Conta conta : listaDeContas) {
 			System.out.println(conta);
 		}
