@@ -1,6 +1,6 @@
 
 public class Cachorro extends Animal{
-
+//APLICANDO O CONCEITO DE POLIMORFISMO, FAZENDO UM OVERRIDE NO MÉTODO "falar" PARA QUE ELE TENHA UMA OUTRA FUNÇÃO 
 	@Override
 	public void falar() {
 		
