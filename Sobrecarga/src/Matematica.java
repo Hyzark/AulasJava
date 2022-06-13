@@ -1,5 +1,5 @@
 public class Matematica {
-
+// 3 METODOS IGUAIS POREM COM FUNCOES E PARAMETROS DIFERENTES.
 	int somar(int x, int y) {
 	return x+y;
 	
