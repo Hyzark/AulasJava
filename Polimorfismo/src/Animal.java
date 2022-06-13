@@ -1,6 +1,6 @@
-
+//INSTANCIANDO A SUPERCLASSD
 public class Animal {
-
+//O COMCEITO DE POLIMORFISMO É USAR UM ÚNICO MÉTODO PARA FAZER DIVERSAS COISAS.
 	public void falar(){
 		
 	}
