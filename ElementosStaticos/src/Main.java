@@ -2,7 +2,7 @@
 public class Main {
 
 	public static void main(String[] args) {
-		
+		//O CONCEITO DE UMA VARIÁVEL ESTATICA EH VOCE IRA USAR AQUELA VARIAVEL APENAS ENQUANTO O SEU PROGRAMA ESTIVER EM EXECUCAO 
 		//Matematica mate = new Matematica();
 		
 //		int r = mate.somar(10, 2);
