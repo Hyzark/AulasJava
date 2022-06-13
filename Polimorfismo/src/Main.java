@@ -1,4 +1,4 @@
-
+//CLASSE MAIN
 public class Main {
 
 	public static void main(String[] args) {
@@ -11,9 +11,11 @@ public class Main {
 //		
 //		lol.falar();
 		
+                //INSTANCIANDO "gato" DE GATO
 		Gato gato = new Gato();
+                //INSTANCIANDO CACHORRO
 		Cachorro cachorro = new Cachorro();
-		
+		//APLICAÇÃO DO POLIMORFISMO NA MAIN, ONDE EU ADD UM PARÂMETRO CONTENDO A VARIÁVEL CORRESPONDENTE DA SUA CLASSE 
 		falar(gato);
 		falar (cachorro);
 		
